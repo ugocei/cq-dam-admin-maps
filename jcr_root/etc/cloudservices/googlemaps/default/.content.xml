@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudservicename="googlemaps"
+        cq:lastModified="{Date}2013-08-08T18:06:05.634+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/dam/templates/googlemaps"
+        jcr:lastModified="{Date}2013-08-08T18:06:05.628+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Google Maps API Config"
+        sling:resourceType="dam/gui/components/admin/googlemapspage"/>
+</jcr:root>

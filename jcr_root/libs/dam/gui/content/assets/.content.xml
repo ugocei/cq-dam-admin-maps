@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudserviceconfigs="[/etc/cloudservices/googlemaps/default]"
+        jcr:mixinTypes="[sling:VanityPath]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="AEM Assets"
+        sling:resourceType="dam/gui/components/admin/page"
+        sling:vanityOrder="{Long}291"
+        sling:vanityPath="/assets">
+        <head/>
+        <header/>
+        <rail/>
+        <content/>
+        <mimeTypeLookup/>
+        <assetscontent/>
+        <subassetscontent/>
+    </jcr:content>
+    <downloadasset/>
+    <collectionspage/>
+    <assetedit/>
+    <renditions/>
+    <crop/>
+    <rotate/>
+    <annotate/>
+    <share/>
+    <versioning/>
+    <editors/>
+    <headerConfig/>
+    <assetsRailConfig/>
+    <addtocollectionwizard/>
+    <assetpage/>
+    <movepagewizard/>
+    <publishsetwizard/>
+    <searchresult/>
+    <setmembers/>
+    <links/>
+    <metadataeditor/>
+    <map/>
+</jcr:root>

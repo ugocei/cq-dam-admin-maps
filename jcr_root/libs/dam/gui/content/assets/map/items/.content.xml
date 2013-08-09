@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <actionbarcontainer
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="content-header">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            group="cq-damadmin-admin-bulkproperties"
+            name="foundation-layout-mode"/>
+        <items jcr:primaryType="nt:unstructured">
+            <default
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/admin/toolbar"
+                class="mode-default">
+                <items jcr:primaryType="nt:unstructured">
+                    <togglerail
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/admin/rail/toggle"
+                        hideText="{Boolean}true"
+                        icon="icon-navigation"
+                        target="#rail"
+                        text="Toggle Rail"
+                        title="Toggle Rail"/>
+                    <divider
+                        jcr:primaryType="nt:unstructured"
+                        divider="{Boolean}true"/>
+                    <back
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/button"
+                        foundation-content-control-action="back"
+                        icon="icon-chevronleft"
+                        rel="foundation-content-control"
+                        title="Back"/>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/heading"
+                        align="center"
+                        level="{Long}1"
+                        text="Map"/>
+                    <viewon
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="dam/gui/components/admin/eyeoperations"
+                        align="right"
+                        class="damadmin-detail-viewon-select"
+                        hideText="{Boolean}true"
+                        icon="icon-viewon"
+                        title="Views">
+                        <options jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="dam/gui/components/admin/dynamichyperlink"
+                                class="original"
+                                hideType="set"
+                                href="#"
+                                rel="foundation-damadmin-detail-original"
+                                text="Image"
+                                title="View Original Asset"/>
+                            <viewproperties
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/hyperlink"
+                                class="bold"
+                                text="Properties"
+                                title="View Properties"/>
+                            <renditions
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/hyperlink"
+                                class="renditions"
+                                hideType="set"
+                                href="#"
+                                text="Renditions"
+                                title="View Renditions"/>
+                            <subassets
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/hyperlink"
+                                class="subassets-popover"
+                                hideType="set"
+                                href="#"
+                                prefix="/assets.html"
+                                suffix="/subassets"
+                                text="Subassets"
+                                title="View Subassets"/>
+                        </options>
+                    </viewon>
+                </items>
+            </default>
+        </items>
+    </actionbarcontainer>
+    <assetdetail
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="asset-detail content-container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            name="foundation-layout-inline"/>
+        <items jcr:primaryType="nt:unstructured">
+            <col1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container"
+                class="asset-detail-view">
+                <items jcr:primaryType="nt:unstructured">
+                    <map
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="dam/gui/components/admin/map"
+                        class="asset-view"/>
+                </items>
+            </col1>
+        </items>
+    </assetdetail>
+</jcr:root>
